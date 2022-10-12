@@ -1,4 +1,6 @@
+@US003
 Feature: Parametre Kullanimi
+
   @bunu
   Scenario: TC01 Parametre kullaniminda ConfigReader Kullanimi
     Given kullanici "faceUrl" sayfasina gider

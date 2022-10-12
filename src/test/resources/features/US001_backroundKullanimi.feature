@@ -1,3 +1,4 @@
+# buraya @parametre yazarak runner classindan da cagirabilirsin (diger bir yol)
 Feature: US001 Background kullanimi
 
   Background: Ortak adimlar
