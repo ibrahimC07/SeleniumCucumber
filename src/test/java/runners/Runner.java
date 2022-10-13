@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "stepDefinitions",
-        tags = "@US003", // iki tag'ı aynı anda çalıştırmak isterseniz "@gp1 and @gp2" ve ya "or"
+        tags = "@PracticeAmazon", // iki tag'ı aynı anda çalıştırmak isterseniz "@gp1 and @gp2" ve ya "or"
         // hepsini yapmak istersek @All yapariz
         dryRun = false
 
