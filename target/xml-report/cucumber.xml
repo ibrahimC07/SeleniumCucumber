@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="20.608">
+    <testcase classname="US0013 Parametre Kullanimi" name="TC01 Parametre Kullanimi" time="19.991">
+        <failure message="" type="java.lang.AssertionError">
+            <![CDATA[Given kullanici "https://www.trendyol.com" sayfasinda.......................passed
+Then kullanici 3 saniye bekler..............................................passed
+When url'nin "amazon" icerdigini test edelim................................failed
+And sayfayi kapatir.........................................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepDefinitions.AmazonStepDefinition.urlNinIcerdiginiTestEdelim(AmazonStepDefinition.java:120)
+	at ✽.url'nin "amazon" icerdigini test edelim(file:///C:/com.Batch81Cucumber/src/test/resources/features/US013_TrendYolSayfasindaHataAlma.feature:6)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
