@@ -1,23 +1,24 @@
 Feature: Amazon Searh
 
+  @gp1
   Scenario: TC01 kullanici amazonda Nutella aratir
 
-    Given kullanici amazon anasayfasinda
+    Given kullanici Amazon web sitesine gider
     Then kullanici Nutella icin arama yapar
     And sonuclarin Nutella icerdigini test eder
 
 
   Scenario: TC02 kullanici amazonda Selenium aratir
 
-    Given kullanici amazon anasayfasinda
+    Given kullanici Amazon web sitesine gider
     Then kullanici Selenium icin arama yapar
     And sonuclarin Selenium icerdigini test eder
 
 
-    @gp2
+
   Scenario: TC03 kullanici amazonda iphone aratir
 
-    Given kullanici amazon anasayfasinda
+    Given kullanici Amazon web sitesine gider
     Then kullanici iphone icin arama yapar
     And sonuclarin iphone icerdigini test eder
     And sayfayi kapatir
@@ -42,7 +43,7 @@ Feature: Amazon Searh
     And sayfayi kapatir
 
 
-  @gp1
+
   Scenario: TC07 kullanici amazonda iphone aratir
 
     Given kullanici amazon anasayfasinda

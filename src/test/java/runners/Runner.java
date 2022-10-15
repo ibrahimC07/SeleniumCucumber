@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-report/cucumber.xml" },
         features = "src/test/resources/features",
         glue = "stepDefinitions",
-        tags = "@US013", // iki tag'ı aynı anda çalıştırmak isterseniz "@gp1 and @gp2" ve ya "or"
+        tags = "@US014", // iki tag'ı aynı anda çalıştırmak isterseniz "@gp1 and @gp2" ve ya "or"
         // hepsini yapmak istersek @All yapariz
         dryRun = false
 
