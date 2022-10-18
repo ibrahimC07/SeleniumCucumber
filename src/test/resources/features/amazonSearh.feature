@@ -1,11 +1,13 @@
 Feature: Amazon Searh
 
-  @gp1
+  @gp11
   Scenario: TC01 kullanici amazonda Nutella aratir
 
     Given kullanici Amazon web sitesine gider
     Then kullanici Nutella icin arama yapar
     And sonuclarin Nutella icerdigini test eder
+    And kullanici 3 saniye bekler
+    And sayfayi kapatir
 
 
   Scenario: TC02 kullanici amazonda Selenium aratir
