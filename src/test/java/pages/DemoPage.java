@@ -12,4 +12,11 @@ public class DemoPage {
 
     @FindBy (xpath = "(//*[@class='btn btn-light '])[11]")
     public WebElement alertWE;
+
+    @FindBy (xpath = "(//*[text()='Click me'])[2]")
+    public WebElement clickMe;
+
+    @FindBy (xpath = "//*[@id='enableAfter']")
+    public WebElement enable;
+
 }

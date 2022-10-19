@@ -1,4 +1,4 @@
-@demo
+@US016
 Feature: US016 Class Work4
 
   Scenario: TC01 alerts and explicitly wait

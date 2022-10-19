@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="47.42">
-    <testcase classname="US015 Kullanici giris testi" name="TC01 Kullanici sitede hesap olusturur" time="46.839">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="24.424">
+    <testcase classname="US016 Class Work4" name="TC01 alerts and explicitly wait" time="23.761">
         <system-out>
-            <![CDATA[Given kullanici "autoUrl" sayfasina gider...................................passed
-And kullanici sign in linkine tiklar........................................passed
-And kullanici Create and account bolumune email adresi girer................passed
-And kullanici Create an Account butonuna basar..............................passed
-And kullanici kisisel bilgilerini ve iletisim bilgilerini girer.............passed
-And kullanici Register butonuna basar.......................................passed
-Then kullanicinin hesap olusturuldugunu dogrulayin..........................passed
-And sayfayi kapatir.........................................................passed
+            <![CDATA[Given kullanici "demoUrl" sayfasina gider...................................passed
+And kullanici 2 saniye bekler...............................................passed
+When kullanici Alerts buttonuna tiklar......................................passed
+And kullanici 2 saniye bekler...............................................passed
+And kullanici On button click, alert will appear after bes seconds karsisindaki click me  butonuna basar.passed
+And kullanici Allertin gorunur olmasini bekler..............................passed
+And kullanici Allert uzerindeki yazinin This alert appeared after bes seconds oldugunu test eder.passed
+And kullanici ok diyerek alerti kapatir.....................................passed
 ]]>
         </system-out>
     </testcase>
