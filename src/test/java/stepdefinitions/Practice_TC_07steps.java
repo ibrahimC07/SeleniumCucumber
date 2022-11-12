@@ -1,10 +1,10 @@
-package stepDefinitions;
+package stepdefinitions;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
 import pages.PracticeTC07Page;
 import utilities.Driver;
 import utilities.ReusableMethods;
-import java.io.IOException;
+
 public class Practice_TC_07steps {
     PracticeTC07Page practiceTC07Page = new PracticeTC07Page();
     @Given("Tarayıcıyı başlatarak {string} url'sine gidin")

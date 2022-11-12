@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml" },
         features = "src/test/resources/features",
-        glue = "stepDefinitions",
+        glue = "stepdefinitions",
         tags = "@medunna", // iki tag'ı aynı anda çalıştırmak isterseniz "@gp1 or @gp2"
         dryRun = false
 

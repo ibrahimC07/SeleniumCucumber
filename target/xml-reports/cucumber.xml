@@ -1,15 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.902">
-    <testcase classname="US015 Kullanici giris testi" name="TC01 Kullanici sitede hesap olusturur" time="0.377">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
-            <![CDATA[Given kullanici "autoUrl" sayfasina gider...................................undefined
-And kullanici sign in linkine tiklar........................................skipped
-And kullanici Create and account bolumune email adresi girer................skipped
-And kullanici Create an Account butonuna basar..............................skipped
-And kullanici kisisel bilgilerini ve iletisim bilgilerini girer.............skipped
-And kullanici Register butonuna basar.......................................skipped
-Then kullanicinin hesap olusturuldugunu dogrulayin..........................skipped
-And sayfayi kapatir.........................................................skipped
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="21.324">
+    <testcase classname="app_title_verification" name="TC01_title_on_chrome" time="12.687">
+        <system-out>
+            <![CDATA[Given user is on the application_url "https://www.bluerentalcars.com/"......passed
+Then verify the page title is "Blue Rental Cars | Cheap, Hygienic, VIP Car Hire".passed
+Then close the remote driver................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="app_title_verification" name="TC01_title_on_firefox" time="7.955">
+        <failure message="Could not start a new session. Response code 500. Message: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Driver server process died prematurely.&#10;Build info: version: '4.6.0', revision: '79f1c02ae20'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'&#10;Driver info: driver.version: unknown &#10;Host info: host: 'KADIR', ip: '192.168.1.4'&#10;Build info: version: '4.6.0', revision: '79f1c02ae20'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'&#10;Driver info: driver.version: unknown&#10;Build info: version: '4.4.0', revision: 'e5c75ed026a'&#10;System info: host: 'KADIR', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]&#10;Capabilities {}" type="org.openqa.selenium.SessionNotCreatedException">
+            <![CDATA[Given user is on the application_url with firefox "https://www.bluerentalcars.com/".failed
+Then verify the page title is "Blue Rental Cars | Cheap, Hygienic, VIP Car Hire".skipped
+Then close the remote driver................................................skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Driver server process died prematurely.
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: driver.version: unknown 
+Host info: host: 'KADIR', ip: '192.168.1.4'
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: driver.version: unknown
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'KADIR', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:139)
+	at stepdefinitions.GridStepDefs.userIsOnTheApplication_urlWithFirefox(GridStepDefs.java:39)
+	at ✽.user is on the application_url with firefox "https://www.bluerentalcars.com/"(file:///C:/com.Batch81Cucumber/src/test/resources/features/GridFeatures/grid_test_case.feature:11)
 ]]>
         </failure>
     </testcase>
